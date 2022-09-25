@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Ativar Media Queries, para receber a largura do dispositivo que o usuario está usando-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+
+    <title>Agengy Website</title>
+    <link rel="stylesheet" href="css/all.css"> <!-- Forma, indicada pelo professor Marcelo Infnet, de usar as fontes Font Awesome -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Outra forma de usar as fontes Font Awesome (além do css/all.css) -->
+    <!-- <script src="https://kit.fontawesome.com/2d1dbbf312.js" crossorigin="anonymous"></script> -->
+    
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/logo.png" alt="Logo do Agency Website">
+                </a>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">Portifolio</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <!-- O "display: inline-block" considera um Enter como um caractere. Para retirar esse caracter, precisa colocar todos os "li" juntos na mesma linha -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="banner clear">
+            <div class="slider1">
+                <div class="container">
+                    <h2>This is a main heading</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing </p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </section>
+        <section id="services">
+            <div class="container">
+            <article class="box4 text-center">
+                <div class="bola">
+                    <i class="fa-solid fa-rocket"></i>
+                </div>
+                <h2>Custom Designs</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+                <a href="#">Read More</a>
+            </article>
+            <article class="box4 text-center">
+                <div class="bola">
+                    <i class="fa-solid fa-desktop"></i>
+                </div>
+                <h2>Web Design</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+                <a href="#">Read More</a>
+            </article>
+            <article class="box4 text-center">
+                <div class="bola">
+                    <i class="fa-solid fa-lightbulb"></i>                    
+                </div>
+                <h2>Blog Pages</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+                <a href="#">Read More</a>
+            </article>
+            <article class="box4 text-center">
+                <div class="bola">
+                    <i class="fa-solid fa-mobile-screen"></i>
+                </div>
+                <h2>Mobile Friendly</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+                <a href="#">Read More</a>
+            </article>
+            </div>
+        </section>
+        <section id="portifolio" class="clear">
+            <div class="container">
+                <h2 class="titulo">Portifolio</h2>
+                <article class="box3"><a href="#"><img src="img/portfolio01.jpg" alt="Foto 1"></a></article>
+                <article class="box3"><a href="#"><img src="img/portfolio02.jpg" alt="Foto 2"></a></article>
+                <article class="box3"><a href="#"><img src="img/portfolio03.jpg" alt="Foto 3"></a></article>
+                <article class="box3"><a href="#"><img src="img/portfolio04.jpg" alt="Foto 4"></a></article>
+                <article class="box3"><a href="#"><img src="img/portfolio05.jpg" alt="Foto 5"></a></article>
+                <article class="box3"><a href="#"><img src="img/portfolio06.jpg" alt="Foto 6"></a></article>
+                <div class="text-center clear">
+                    <a href="#" class="btn-portfolio">See all works</a>
+
+                </div>
+            </div>
+        </section>
+        <section id="team">
+            <div class="container">
+                <h2 class="titulo">The Team</h2>
+                <article class="box4 text-center">
+                    <img src="img/team01.jpg" alt="Foto 01">
+                    <h3>Adrian Thomas</h3>
+                    <h4>CEO & Founder</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</p>
+                </article>
+                <article class="box4 text-center">
+                    <img src="img/team02.jpg" alt="Foto 02">
+                    <h3>Narate Ketram</h3>
+                    <h4>Creative Director</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</p>
+                </article>
+                <article class="box4 text-center">
+                    <img src="img/team03.jpg" alt="Foto 03">
+                    <h3>Fernando Comet</h3>
+                    <h4>CEO & Founder</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</p>
+
+                </article>
+                <article class="box4 text-center">
+                    <img src="img/team04.jpg" alt="Foto 04">
+                    <h3>Adedayo saheed</h3>
+                    <h4>Creative Director</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</p>
+
+                </article>
+            </div> 
+        </section>
+        <section id="price" class="clear">
+            <div class="container">
+                <article class="box3">
+                    <table>
+                        <tr>
+                            <th>Basic</th>
+                        </tr>
+                        <tr>
+                            <td>$ 5.01/Month</td>
+                        </tr>
+                        <tr>
+                            <td>Lorem Ipsum</td>
+                        </tr>
+                        <tr>
+                            <td>Lorem Ipsum</td>
+                        </tr>
+                        <tr>
+                            <td>Lorem Ipsum</td>
+                        </tr>
+                        <tr>
+                            <td>Lorem Ipsum</td>
+                        </tr>
+                        <tr>
+                            <td>Lorem Ipsum</td>
+                        </tr>
+                        <tr>
+                            <td>Lorem Ipsum</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#" class="btn-table">Buy Now</a></td>
+                        </tr>
+                    </table>
+                </article>
+                <article class="box3">
+                    <table>
+                        <tr>
+                            <th>Pro</th>
+                        </tr>
+                        <tr>
+                            <td>$ 5.01/Month</td>
+                        </tr>
+                        <tr>
+                            <td>Lorem Ipsum</td>
+                        </tr>
+                        <tr>
+                            <td>Lorem Ipsum</td>
+                        </tr>
+                        <tr>
+                            <td>Lorem Ipsum</td>
+                        </tr>
+                        <tr>
+                            <td>Lorem Ipsum</td>
+                        </tr>
+                        <tr>
+                            <td>Lorem Ipsum</td>
+                        </tr>
+                        <tr>
+                            <td>Lorem Ipsum</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#" class="btn-table">Buy Now</a></td>
+                        </tr>
+                    </table>
+                </article>
+                <article class="box3">
+                    <table>
+                        <tr>
+                            <th>Premium</th>
+                        </tr>
+                        <tr>
+                            <td>$ 5.01/Month</td>
+                        </tr>
+                        <tr>
+                            <td>Lorem Ipsum</td>
+                        </tr>
+                        <tr>
+                            <td>Lorem Ipsum</td>
+                        </tr>
+                        <tr>
+                            <td>Lorem Ipsum</td>
+                        </tr>
+                        <tr>
+                            <td>Lorem Ipsum</td>
+                        </tr>
+                        <tr>
+                            <td>Lorem Ipsum</td>
+                        </tr>
+                        <tr>
+                            <td>Lorem Ipsum</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#" class="btn-table">Buy Now</a></td>
+                        </tr>
+                    </table>
+                </article>
+            </div>
+        </section>
+        <section id="depoimentos" class="clear">
+            <div class="container">
+                <h2 class="titulo">What Clients Say</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et obcaecati repellendus doloremque magnam
+                    ducimus, quia veniam ullam quidem dolore quod beatae hic, cupiditate ipsa magni doloribus nostrum saepe!
+                    Nobis, pariatur.</p>
+                <h3>John Dave</h3>
+            </div>
+        </section>
+    </main>
+    <footer class="clear">
+        <div class="container">
+            <h2 class="titulo text-white">Contact Us</h2>
+            <div class="info box2">
+                <h3>Get in touch with us</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati fugit facere vitae debitis.</p>
+                <ul class="socialmedia">
+                    <li><a href="#" class="facebook"></a></li>
+                    <li><a href="#" class="twitter"></a></li>
+                    <li><a href="#" class="google"></a></li>
+                </ul>
+                <ul class="clear address">
+                    <li><a href="#">cssauthor.com</a></li>
+                    <li><span>+55-21-99999-9999</span></li>
+                    <li><a href="#">info@cssauthor.com</a></li>
+                </ul>
+            </div>
+
+            <div id="contact" class="box2">
+                <form action="#" method="post">
+                    <input type="text" name="txtName" placeholder="Name"><input type="email" name="txtEmail" placeholder="E-mail">
+                    <textarea name="txtMsg" placeholder="Message"></textarea>
+                    <input type="submit" value="Send">
+                </form>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

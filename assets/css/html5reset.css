@@ -22,9 +22,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
-    /* font-family: 'Open Sans', sans-serif; */
-	font-family: 'Source Sans Pro', sans-serif;
-    /* ACRESCENTEI A FAMILIA DE FONTES PADRÃO DESTA PAGINA */
+  
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -33,9 +31,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
-    font-size: 10px;
-    /* informado tamanho base de fonte de 10x. Restante do codigo irá se referenciar a este tamanho de fonte usando a unidade de medida "em" que multiplica este valor. Facilita manutenções futuras*/
-}
+    }
 ol, ul {
 	list-style: none;
 }
