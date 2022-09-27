@@ -3149,19 +3149,3 @@ body:not(.device-touch) .social-icon i {
 #main #top{
 	height: 100vh;
 }
-
-
-/* Pagina Obrigado pelo Contato */
-
-.obrigadoBody{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	min-height: 100vh;
-	background-color: #101026;
-	flex-direction: column;
-}
-
-.obrigadoBody h2{
-	color: #fff;
-}
