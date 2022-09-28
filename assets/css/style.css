@@ -1803,10 +1803,10 @@ div .box-3 {
 				width: auto;
 			}
 
-article img:hover{
+/* article img:hover{
 	box-shadow: 0 0 5px #000;
 
-}
+} */
 
 
 
@@ -2005,9 +2005,31 @@ article img:hover{
 /* Item */
 
 	.item {
-		box-shadow: 0 0.05em 0.15em 0 rgba(0, 0, 0, 0.05);
+		box-shadow: 0 0.05em 0.15em 0 rgba(0, 0, 0, 1.00);
 		margin-bottom: 40px;
+		padding: 0.8em;
 	}
+
+
+	.item:hover{
+		box-shadow: 0 0 20px #000;
+	}
+	.item p{
+			font-weight: 400;
+			
+	}
+
+	#portfolio .item h1,
+	#portfolio .item h2,
+	#portfolio .item h3,
+	#portfolio .item h4,
+	#portfolio .item h5,
+	#portfolio .item h6 
+	{
+		font-weight: 700;
+	}
+
+
 
 		.item header {
 			background: #fff;
@@ -2057,7 +2079,6 @@ article img:hover{
 		}
 
 /* Header */
-/* TODO: acrescentar imagem overlay */
 	#header {
 		display: -moz-flex;
 		display: -webkit-flex;
@@ -2071,7 +2092,8 @@ article img:hover{
 		-webkit-justify-content: space-between;
 		-ms-justify-content: space-between;
 		justify-content: space-between;
-		background: #222629 url("images/overlay.png");
+		background: #222629;
+		/* background: #222629 url("../img/header5.jpg"); */
 		box-shadow: inset -0.25em 0 0.25em 0 rgba(0, 0, 0, 0.1);
 		color: #fff;
 		height: 100%;
@@ -2207,6 +2229,8 @@ article img:hover{
 		margin-left: 375px;
 		text-align: center;
 		background-color: #dce3e2;
+		background-color: rgb(221, 220, 227);
+
 		padding: 3em 0 4em 0;
 		box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.05), inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.025);
 		font-size: 0.8em;
@@ -2270,32 +2294,82 @@ article img:hover{
 					}
 
 			#main > section.cover {
-				padding: 10em 0;
+				padding: 10em 3em;
 				background-size: cover;
 				background-position: center center;
 			}
 
 			#main > section.one {
-				background-color: #81918E;
-				background-image: url("../img/vintage-grunge-blue-concrete-texture-wall-background-with-vignette-min.jpg");
+				/* background-color: #81918E; */
+				background-image: url("../img/header7-min.jpg");
                 background-repeat: no-repeat;
                 background-size: cover;
+				/* backdrop-filter: */
             }
 
+			/* Background pre-load */
+			body.homepage #main > section.one:after{	
+		/* body.homepage #header:after { */
+			content: '';
+			/* background: #1C0920; */
+			background: #222629;
+			/* background: #fff; */
+			display: block;
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			opacity: 0;
+			-moz-transition: opacity 2.5s ease-in-out;
+			-webkit-transition: opacity 2.5s ease-in-out;
+			-ms-transition: opacity 2.5s ease-in-out;
+			transition: opacity 2.5s ease-in-out;
+			-moz-transition-delay: 0.5s;
+			-webkit-transition-delay: 0.5s;
+			-ms-transition-delay: 0.5s;
+			transition-delay: 0.5s;
+		}
+
+		body.homepage.is-preload #main > section.one:after{
+	/* body.homepage.is-preload #header:after { */
+		opacity: 1;
+	}
+
+	.inner {
+		position: relative;
+		z-index: 1;
+		/* margin: 0;
+		display: inline-block;
+		vertical-align: middle; */
+	}
+
+
+
+
+
+/* fim alterando animação preload */
+
 			#main > section.two {
-				background-color: #f5fafa;
-                background-image: url("../img/view-white-crumpled-paper-min.jpg");
+				/* background-color: #f5fafa; */
+				background-color: rgb(245, 245, 250);
+
+				/* background-color: #DBDFFD; */
+                /* background-image: url("../img/view-white-crumpled-paper-min.jpg");
                 background-repeat: no-repeat;
-                background-size: cover;
+                background-size: cover; */
 
 			}
 
 			#main > section.three {
-				background-color: #ecf1f1;
+				/* background-color: #ecf1f1; */
+				background-color: rgb(236, 236, 241);
+
 			}
 
 			#main > section.four {
-				background-color: #e8edec;
+				/* background-color: #e8edec; */
+				background-color: rgb(233, 232, 237)
 			}
 
 /* Wide */
@@ -2341,7 +2415,7 @@ article img:hover{
 			#main section.cover {
 				padding: 5em 0;
 			}
-
+			
 	}
 
 /* Narrow */
@@ -2475,7 +2549,7 @@ article img:hover{
 				width: 275px;
 				z-index: 10002;
 				width: 275px;
-				background: #222729 url("images/overlay.png");
+				/* background: #222729 url("images/overlay.png"); */
 				box-shadow: inset -0.25em 0 0.25em 0 rgba(0, 0, 0, 0.125);
 			}
 
@@ -3107,14 +3181,7 @@ body:not(.device-touch) .social-icon i {
 
 #contact-icons{
 	display: flex;
-	/* justify-self: center; */
 	justify-content: center;
-	/* justify-content: space-evenly; */
-	/* gap: 60px; */
-	/* justify-items: center; */
-	/* align-items: center; */
-	/* background-color: #008CDD; */
-	/* margin: 0 60px; */
 }
 
 #contact-icons p{
@@ -3128,8 +3195,6 @@ body:not(.device-touch) .social-icon i {
 #contact-icons .div-space{
 	width:100px;
 	height: 40px;
-	/* background-color: #00ACEE; */
-	
 }
 
 #portfolio header{
@@ -3149,6 +3214,7 @@ body:not(.device-touch) .social-icon i {
 #main #top{
 	height: 100vh;
 }
+
 
 
 /* Pagina Obrigado pelo Contato */
